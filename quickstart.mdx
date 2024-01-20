@@ -1,86 +1,70 @@
 ---
 title: 'Quickstart'
-description: 'Start building awesome documentation in under 5 minutes'
+description: 'This page will help you see all the pages that are available to you and help you identify which ones will best serve you in your development experience'
 ---
 
-## Setup your development
+## Let's take a look at API72
 
-Learn how to update your docs locally and and deploy them to the public.
-
-### Edit and preview
+Your API is divided up into three major pages that are designed to help you build your API as well as compliment your level of experience-- beginner to experience developer.
 
 <AccordionGroup>
-  <Accordion icon="github" title="Clone your docs locally">
-    During the onboarding process, we created a repository on your Github with
-    your docs content. You can find this repository on our
-    [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
+  <Accordion icon="rocket" title="API Kit">
+    **Meant for all levels of development experience from beginner to experienced developer.**
+
+    > This is your one stop shop for all the information you will need to understand, build, and manage your API. Use your API Kit to help orient yourself inside of your API72 development experience as well as educate yourself to use more advanced tools offered in the other pages.
   </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally. 1. Install the
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-    documentation changes locally with this command: ``` npm i -g mintlify ```
-    2. Run the following command at the root of your documentation (where
-    `mint.json` is): ``` mintlify dev ```
+  <Accordion icon="square-code" title="Apollo Server">
+    **For advanced and experienced developers**
+
+    > This server is powered by GraphQL which is a leading standard in query based API which API72 supports.
+
+    > Don't understand anything that was said? That's ok! Make sure to go through the beginner and intermediate tutorials if you want to use this powerful tool as well as supplement information by checking out the [GraphQL offical page](https://graphql.org/).
+
+    > If your familiar with GraphQL, we have integrated an [Apollo Server](https://www.apollographql.com/docs/apollo-server/getting-started) for you that sends request to your Node Server that executes your API requests. Make sure to check out the advanced the tutorials to see how to best use our integration of Apollo Server powered by GraphQL.
+  </Accordion>
+  <Accordion icon="rectangle-terminal" title="Node Server">
+    **For advanaced and experienced developers**
+
+    > Your Node server is the brains behind your API. All API calls will be parsed and handled by the Node server. Check out the [Documentation](https://mintlify.com/docs/quickstart) page to better understand how to make direct calls to the server without using the Apollo Server.
+    
+    > Don't know what Node is? That's Ok! Just check out the beginner tutorials to learn more about what Node is and how your API utilizes it to power all the cool functionality that exits in your API.
   </Accordion>
 </AccordionGroup>
 
-### Deploy your changes
+## How do I make the most of my API Kit?
 
-<AccordionGroup>
-
-<Accordion icon="message-bot" title="Install our Github app">
-  Our Github app automatically deploys your changes to your docs site, so you
-  don't need to manage deployments yourself. You can find the link to install on
-  your [dashboard](https://dashboard.mintlify.com). Once the bot has been
-  successfully installed, there should be a check mark next to the commit hash
-  of the repo.
-</Accordion>
-<Accordion icon="rocket" title="Push your changes">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for your changes to update in your docs site. If you push and don't see that
-  the Github app successfully deployed your changes, you can also manually
-  update your docs through our [dashboard](https://dashboard.mintlify.com).
-</Accordion>
-
-</AccordionGroup>
-
-## Update your docs
-
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
+There's so many cool resources and functionality that API72 has imbedded into your own personal API Kit. Don't let it go to waste! Doing these four steps listed below in order will familiarize you with your API and set you up for success in the future.
 
 <CardGroup>
 
-<Card title="Style Your Docs" icon="paintbrush" href="/settings/global">
-  Add flair to your docs with personalized branding.
+<Card
+  title="Tutorials are king!"
+  icon="square-1"
+>
+  Do the tutorials that match your level of experience. Each set of tutorials will improve you as a developer no matter what level you are at. 
 </Card>
 
 <Card
-  title="Add API Endpoints"
-  icon="square-code"
-  href="/api-playground/configuration"
+  title="Read Documentation"
+  icon="square-2"
 >
-  Implement your OpenAPI spec and enable API user interaction.
+  At the end of each tutorial there is a Documentation reading set. It's optional, but will give you the edge you need to develop an amazing API!
 </Card>
 
 <Card
-  title="Integrate Analytics"
-  icon="chart-mixed"
-  href="/analytics/supported-integrations"
+  title="Explore your API"
+  icon="square-3"
 >
-  Draw insights from user interactions with your documentation.
+  As mentioned before there are three major parts of your API, make sure you check out all of them!
 </Card>
 
 <Card
-  title="Host on a Custom Domain"
-  icon="browser"
-  href="/settings/custom-domain/subdomain"
+  title="Have fun!"
+  icon="square-4"
 >
-  Keep your docs on your own website's subdomain.
+  Playaround with the [API Reference](http://localhost:3000/api-reference/introduction) page and make your own API calls to your API and see what happens. Just do your thing!
 </Card>
+
+
 
 </CardGroup>
