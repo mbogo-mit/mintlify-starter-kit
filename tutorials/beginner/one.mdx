@@ -43,45 +43,23 @@ Notice how when you click **Send** you get a response back. You just made your f
 
 ### What does this all mean?
 
-```md
-![title](/path/image.jpg)
+Hopefully after this tutorial you have gotten a little more familiar with your API Kit as well as interested in the power of your API. So far we have shown you a simple functionality of your API. We were able to see the structure of the API currently. But there's much more!
+
+### What makes my API special
+
+So in the tutorial you saw all the services that make up your API-- recall your API's response.
+
+```
+query Create($nameId: String!) {
+  api {
+    aws {
+      websocket(nameID: $nameId) {
+        name
+        nameID
+      }
+    }
+  }
+}
 ```
 
-Note that the image file size must be less than 5MB. Otherwise, we recommend hosting on a service like [Cloudinary](https://cloudinary.com/) or [S3](https://aws.amazon.com/s3/). You can then use that URL and embed.
-
-### Using Embeds
-
-To get more customizability with images, you can also use [embeds](/writing-content/embed) to add images
-
-```html
-<img height="200" src="/path/image.jpg" />
-```
-
-## Embeds and HTML elements
-
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/4KzFe50RQkQ"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  style={{ width: '100%', borderRadius: '0.5rem' }}
-></iframe>
-
-<br />
-
-<Tip>
-
-Mintlify supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
-
-</Tip>
-
-### iFrames
-
-Loads another HTML page within the document. Most commonly used for embedding videos.
-
-```html
-<iframe src="https://www.youtube.com/embed/4KzFe50RQkQ"> </iframe>
-```
+Let's take this a step further. You can see that your API starts out connected to very few services. What if you wanted to create a streaming app or social media app? You need a database to save photos and messages as well as some way to support real time communication, but this API doesn't have any of those services. This is where the magic happens! With API72, we created what is called a **Dynamic API**. A Dynamic API allows you to add services to your API by making a request to your API to tell it to make what you need. In the next tutorial you will make your first Dynamic API call where you will see how your API can **evolve!**
