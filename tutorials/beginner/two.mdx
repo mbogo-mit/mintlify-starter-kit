@@ -1,0 +1,82 @@
+---
+title: 'Dynamic API'
+description: 'What makes API72 so special?'
+icon: 'trophy-star'
+---
+
+## It's time to expand your API
+
+In the previous tutorial you were shown how to make an call to your API and saw the archeticture of the API. Currently your API didn't have any resources connect to it, that's all about to change!
+
+```
+To denote a `word` or `phrase` as code, enclose it in backticks (`).
+```
+
+## Adding your first resource
+
+To expand your API, this tutorial will show you how to add a MongoDB Database to your API. If you don't know what MongoDB is or what a database is click on the respecitive words to get a quick explanation of both. The major takeaway is after adding a database to your API you will be able to store, retrive, edit, and delete data. Having a database is essential for any idea, business, project so let's get into it!
+
+### First things first
+
+Navigate to your API Reference page and go to the correct [API call to add a a MongoDB]() integration to your API.
+
+>Notice the url you will be using to do make this call
+>`/api/node/mongodb/create/:mongodbname`
+
+In this url you can see that we are trying to create a MongoDB integration with the name `:mongodbname` which is a value you get to choose as a user (`my-first-mongodb` e.g.).
+
+Once you have sent the API call you should recieve a response that looks something like this
+
+```
+query Create($nameId: String!) {
+  api {
+    aws {
+      websocket(nameID: $nameId) {
+        name
+        nameID
+      }
+    }
+  }
+}
+```
+
+### Let's make sure our API actually expanded!
+
+So from the previous lesson we learned how to make a call to the API to see what current integrations that the API has.
+
+>Make another call to the your ledger archeticture you learned in the previous tutorial
+>`/api/node/ledger/archeticture`
+
+You should see now that MongoDB is listed as an integration in your API. This is what API72 likes to call **Dynamic API**.
+
+
+### What's next?
+
+Not that you see that things can expand, the next question is what can I add to my API? Below is a list of integrations that we think are essential to making a powerful API. Having these three integrations below will allow to create almost any online business, idea, or project
+
+
+<AccordionGroup>
+  <Accordion icon="rocket" title="MongoDB">
+    **You've added a MongoDB integration to your API but now its time to use it!**
+
+    > ...
+  </Accordion>
+  <Accordion icon="square-code" title="Next.js Website">
+    **Every good idea needs an amazing website**
+
+    > ...
+
+    > ...
+
+    > ...
+  </Accordion>
+  <Accordion icon="rectangle-terminal" title="Websocket (Real Time Communication)">
+    **Streaming, video calls, and group chats... all at your fingertips!**
+
+    
+
+    > ...
+    
+    > ...
+  </Accordion>
+</AccordionGroup>

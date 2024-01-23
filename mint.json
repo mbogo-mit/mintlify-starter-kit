@@ -34,7 +34,7 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
+      "name": "API Kit",
       "url": "api-reference"
     }
   ],
@@ -67,7 +67,7 @@
       "group": "Beginner Tutorials",
       "pages": [
         "tutorials/beginner/one",
-        "tutorials/beginner/code",
+        "tutorials/beginner/two",
         "tutorials/beginner/images"
       ]
     },
